@@ -15,7 +15,7 @@ const InputWraper = styled.div`
 `
 
 const Input = styled.input`
-    width: -webkit-fill-available;
+    width: calc(100% - 24px);
     line-height: 24px;
     padding: 0;
     border: 1px solid #d1d5db;
@@ -62,7 +62,7 @@ const Icon = styled.img`
 `
 
 const Button = styled.button`
-    width: -webkit-fill-available;
+    width: calc(100% - 24px);
     margin: 0 12px;
     border: none;
     background-color: #e11d48;
