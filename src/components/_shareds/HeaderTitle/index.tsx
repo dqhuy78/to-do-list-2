@@ -1,7 +1,9 @@
 import { FC } from "react";
 import styled from "styled-components";
 
-const Title = styled.h2`
+const Title = styled.h2.withConfig({
+    componentId: 'Title'
+} as any)`
     text-align: center;
     line-height: 28px;
     color: white;

@@ -7,12 +7,16 @@ import HeaderTitle from 'components/_shareds/HeaderTitle';
 import Filter from "./Filter";
 import FilterOption from "models/FilterOption";
 
-const Paragraph = styled.p`
+const Paragraph = styled.p.withConfig({
+    componentId: 'TodoList'
+} as any)`
     text-align: center;
     line-height: 48px;
     margin-top: 12px;
 `
-const Info = styled.p`
+const Info = styled.p.withConfig({
+    componentId: 'TodoList'
+} as any)`
     margin: 12px 12px -6px;
     font-weight: bold;
     color: #6b7280;

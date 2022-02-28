@@ -8,7 +8,9 @@ import TodoList from './components/TodoList';
 import TodoItem from "components/TodoList/TodoItem";
 import FilterOption from "models/FilterOption";
 
-const AppWrapper = styled.div`
+const AppWrapper = styled.div.withConfig({
+    componentId: 'App'
+} as any)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +24,9 @@ const AppWrapper = styled.div`
     }
 `
 
-const AppHeading = styled.h1`
+const AppHeading = styled.h1.withConfig({
+    componentId: 'App'
+} as any)`
     font-size: 24px;
     line-height: 1.5;
     font-weight: bold;
@@ -34,7 +38,9 @@ const AppHeading = styled.h1`
     }
 `
 
-const Divider = styled.div`
+const Divider = styled.div.withConfig({
+    componentId: 'App'
+} as any)`
     height: 1px;
     width: 100%;
     max-width: 512px;

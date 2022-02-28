@@ -3,7 +3,9 @@ import styled, { css } from "styled-components";
 
 import FilterOption from "models/FilterOption";
 
-const FilterWraper = styled.div`
+const FilterWraper = styled.div.withConfig({
+    componentId: 'Filter'
+} as any)`
     display: flex;
     align-items: center;
     margin: 12px 12px 0;
@@ -17,7 +19,9 @@ interface FilterButtonProp {
     isActive?: boolean
 }
 
-const FilterButton = styled.button<FilterButtonProp>`
+const FilterButton = styled.button.withConfig({
+    componentId: 'TodoInput'
+} as any)<FilterButtonProp>`
     width: calc(100% / 3 - 10px);
     font-size: 14px;
     border: none;

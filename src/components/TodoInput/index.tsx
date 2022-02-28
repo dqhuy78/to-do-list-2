@@ -5,7 +5,9 @@ import TaskImg from './file-list-fill.png';
 import Card from 'components/_shareds/Card';
 import HeaderTitle from "components/_shareds/HeaderTitle";
 
-const InputWraper = styled.div`
+const InputWraper = styled.div.withConfig({
+    componentId: 'TodoInput'
+} as any)`
     display: flex;
     align-items: center;
     margin: 16px 12px;
@@ -14,7 +16,9 @@ const InputWraper = styled.div`
     }
 `
 
-const Input = styled.input`
+const Input = styled.input.withConfig({
+    componentId: 'TodoInput'
+} as any)`
     width: calc(100% - 24px);
     line-height: 24px;
     padding: 0;
@@ -39,7 +43,9 @@ const Input = styled.input`
     }
 `
 
-const Icon = styled.img`
+const Icon = styled.img.withConfig({
+    componentId: 'TodoInput'
+} as any)`
     padding: 6px;
     box-sizing: border-box;
     width: 26px;
@@ -61,7 +67,9 @@ const Icon = styled.img`
     }
 `
 
-const Button = styled.button`
+const Button = styled.button.withConfig({
+    componentId: 'TodoInput'
+} as any)`
     width: calc(100% - 24px);
     margin: 0 12px;
     border: none;

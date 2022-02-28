@@ -7,7 +7,9 @@ import DeleteIcon from './delete-bin-2-fill.png';
 import ConfirmIcon from './checkbox-circle-fill.png';
 import UndoIcon from './arrow-go-back-fill.png';
 
-const ItemWraper = styled.div`
+const ItemWraper = styled.div.withConfig({
+    componentId: 'TodoItem'
+} as any)`
     border: 1px solid #d1d5db;
     display: flex;
     padding: 12px 12px;
@@ -19,7 +21,9 @@ const ItemWraper = styled.div`
     }
 `
 
-const Checkbox = styled.input`
+const Checkbox = styled.input.withConfig({
+    componentId: 'TodoItem'
+} as any)`
     margin: 0 8px 0 0;
     cursor: pointer;
 `
@@ -28,7 +32,9 @@ interface TaskValueProp {
     readonly isCompleted: boolean
 }
 
-const TaskValue = styled.p<TaskValueProp>`
+const TaskValue = styled.p.withConfig({
+    componentId: 'TodoItem'
+} as any)<TaskValueProp>`
     color: #27272a;
     flex-grow: 1;
     margin-right: 20px;
@@ -39,7 +45,9 @@ const TaskValue = styled.p<TaskValueProp>`
     `}
 `
 
-const TaskValueInput = styled.input`
+const TaskValueInput = styled.input.withConfig({
+    componentId: 'TodoItem'
+} as any)`
     width: 100%;
     margin-right: 20px;
     border: none;
@@ -53,7 +61,9 @@ const TaskValueInput = styled.input`
     }
 `
 
-const ActionIcon = styled.img`
+const ActionIcon = styled.img.withConfig({
+    componentId: 'TodoItem'
+} as any)`
     width: 24px;
     height: 24px;
     padding: 2px;
